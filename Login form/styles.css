@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    height: auto;
+    flex-direction: column-reverse;
+    width: 100%;
+   
+}
+
+h2 {
+    text-align: center;
+}
+
+#form {
+    width: 40%;
+    height: auto;
+    border-radius:1rem ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+}
+
+input.inputData {
+    margin: 1rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+input.gender {
+background: none;
+margin: 1rem;
+}
+
+.fieldName {
+    width: 7.5rem;
+    display: inline-block;
+}
+
+.submit {
+    text-align: center;
+}
+#pg {
+    display: none;
+}

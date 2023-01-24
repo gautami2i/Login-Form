@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="form">
+        <form>
+          <h2>Registration</h2>
+          <div class="bio">
+            <label for="title">Choose title:</label>
+            <select name="title" id="title" class="fieldName">
+              <option value="none">select</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Ms.</option>
+            </select>
+            <br />
+            <label for="firstName" class="fieldName">FirstName :</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="inputData"
+              placeholder="FirstName"
+              onblur="nameValidation('firstName')"
+              required
+            />
+            <br />
+            <label for="lastName" class="fieldName">LastName :</label>
+            <input
+              type="text"
+              name="name"
+              id="lastName"
+              class="inputData"
+              placeholder="LastName"
+              onblur="nameValidation('lastName')"
+              required
+            >
+            <br />
+            <label for="date" class="fieldName">D.O.B : </label>
+            <input
+              type="date"
+              value="none"
+              id="date"
+              class="inputData"
+              name="gender"
+              required
+            />
+            <br />
+            <label class="fieldName">Gender : </label>
+            <input
+              type="radio"
+              value="male"
+              id="male"
+              class="gender"
+              name="gender"
+            />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              value="female"
+              id="female"
+              class="gender"
+              name="gender"
+            />
+            <label for="female">Female</label>
+          </div>
+          <!--Contact details-->
+          <div class="contact">
+            <label class="fieldName" for="address">Address :</label>
+            <textarea
+              class="inputData"
+              placeholder=""
+              required
+            ></textarea>
+            <br />
+            <label class="fieldName" for="city">city :</label>
+            <input type="text" id="city" class="inputData" placeholder="city" onblur="nameValidation('city')" />
+            <br />
+            <label class="fieldName" for="state">state :</label>
+            <input
+              type="text"
+              id="state"
+              class="inputData"
+              placeholder="TamilNadu"
+              onblur="nameValidation('state')"
+            />
+            <br />
+            <label class="fieldName" for="city">pinCode :</label>
+            <input
+              type="number"
+              id="city"
+              class="inputData"
+              placeholder="600001"
+            />
+            <br />
+            <label class="fieldName" for="number">phoneNumber :</label>
+            <input
+              type="tel"
+              id="number"
+              class="inputData"
+              maxlength="10"
+              placeholder="9876543211"
+              onblur="numberValidation('number')"
+              title="Enter 10 digit number"
+              required
+            />
+            <br />
+            <label for="email" class="fieldName">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputData"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <label for="pass" class="fieldName">password :</label>
+            <input
+              type="password"
+              name="name"
+              id="pass"
+              class="inputData"
+              placeholder="Password"
+              required
+            />
+            <br>
+            <div>
+                <h3>Qualifications</h3>
+                <h5>UG details</h5>
+
+                <label class="fieldName" for="UG">UniName :</label>
+                <input type="text" name="university" id="UG" class="inputData" placeholder="uni name" onblur = "nameValidation('UG')" required>
+                <br>
+                <label class="fieldName" for="RollNo">RollNo :</label>
+                <input type="number" name="RollNo" id="RollNo" class="inputData" placeholder="RollNumber" required>
+                <br>
+                <label class="fieldName" for="YOJ">YearOfJoin :</label>
+                <input type="date" name="RollNo" id="YOJ" class="inputData" placeholder="YearOfJoin" required> <br>
+                PG<input type="checkbox"  id="PG pg" onclick="PGDetails(this)" >
+                <div id="pg">
+                
+                
+                <label class="fieldName " for="PG">UniName :</label>
+                <input type="text" name="university" id="PG" class="inputData pg" placeholder="uni name" onblur = "nameValidation('PG')" required>
+                <br>
+                <label class="fieldName " for="RollNo">RollNo :</label>
+                <input type="number" name="RollNo" id="RollNo" class="inputData pg" placeholder="RollNumber" required>
+                <br>
+                <label class="fieldName " for="YOJ">YearOfJoin :</label>
+                <input type="date" name="RollNo" id="YOJ" class="inputData pg" placeholder="YearOfJoin" required> <br>
+            </div>
+          </div>
+          <div class="submit">
+            <input type="submit" class="inputData" />
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
